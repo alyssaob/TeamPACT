@@ -1,0 +1,94 @@
+/* navigation stuff for smallest size*/
+
+header img{
+    height: 75px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15%;
+    float: right;
+    background-color: white;
+    border-radius: 10%;
+} 
+#mheallogo{
+  border-radius: 100%;
+}
+.skip{
+  position: relative;
+  bottom: 40px;
+}
+/* Add a background color to the top navigation */
+
+nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* background-color: rgb(4, 10, 54); */
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(28, 37, 204);
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-top: 3%;
+}
+nav a{
+  color: white;
+  font-size: 120%;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Roboto", Arial;
+}
+nav a:hover{
+  background-color: white;
+  border: solid 1px white;
+  color: rgb(28, 37, 204);
+}
+nav li.current a{
+  font-weight: 900;
+}
+body{
+  background-color: white;
+}
+
+/* tablet */
+@media screen and (min-width: 700px){
+
+}
+
+/* laptop */
+@media screen and (min-width: 900px){
+    /* Style the links inside the navigation bar */
+    nav{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+    }
+
+    nav ul{
+      flex-direction: row;
+      width: 40%;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a{
+      padding-top: 3%;
+      border: solid 10px white;
+      color: black;
+    }
+    
+    nav a:hover{
+      border: solid 10px rgb(28, 37, 204);
+      background-color: rgb(28, 37, 204);
+      color: white;
+    }
+
+    
+ 
+}

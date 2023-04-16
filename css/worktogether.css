@@ -1,0 +1,178 @@
+h1{
+    font-size: 200%;
+    text-align: center;
+    padding-top: 5%;
+    font-family: "Roboto", Arial;
+    color: black;
+}
+h1:first-child{
+    margin-top: 40%;
+  }
+h2{
+    font-size: 150%;
+    text-align: center;
+    font-family: "Roboto", Arial;
+    padding-top: 1%;
+}
+.workTogether{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5%;
+    margin: 3%;
+    font-family: "Roboto", Arial;
+     height: 50%
+}
+
+.communityGrid, .industryGrid{
+    background-color: rgb(1,1,1,0.8);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-evenly;
+   
+}
+
+.communityGrid h3, .industryGrid h3{
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 120%;
+    color: white;
+
+}
+
+.communityGrid h4, .industryGrid h4{
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 110%;
+    color: white;
+
+}
+
+.communityGrid h5, .industryGrid h5{
+    text-align: center;
+    grid-column: 1 / -1;
+    color: white;
+    font-size: 110%;
+    font-weight: 900;
+
+}
+.communityGrid ul, .industryGrid ul{
+    grid-column: 1 / -1;
+    color: white;
+    list-style-type:square;
+}
+
+.communityGrid ul{
+    margin-left: 7%;
+}
+.communityGrid img, .industryGrid img{
+    grid-column: 2 / 2;
+    height: 50%;
+    background-color: white;
+    border: 8px white solid;
+    align-self: start;
+    justify-self: center;
+}
+.communityGrid p, .industryGrid p{
+    grid-column: 1 / 1;
+    color: white;
+    align-self: center;
+    justify-self: center;
+ 
+}
+
+#ucp{
+    grid-row: 6;
+}
+
+#stryker{
+    grid-row: 7;
+}
+#in2being{
+    grid-row: 6;
+}
+.flyerGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3%;
+    justify-items: center;
+}
+.flyerGrid a{
+    grid-row: 2;
+    color: black;
+    font-family: "Roboto", Arial;
+    font-size: 200%;
+}
+.bgimg{
+    background-image: url("https://s.hdnux.com/photos/01/25/62/04/22487305/4/rawImage.jpg");
+    margin-top: 7%;
+    padding-bottom: 6%;
+}
+@media screen and (min-width: 700px){
+    .workTogether{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7%;
+        padding-bottom: 15%;
+    }
+
+    h1:first-child{
+        margin-top: 3%;
+    }
+    .communityGrid, .industryGrid{
+        height: 150%;
+        padding: 3%;
+    }
+    .communityGrid p, .industryGrid p{
+        display: none;
+    }
+
+    #med{
+        grid-row: 6;
+        grid-column: 1;
+        justify-self: center;
+    }
+
+    #ucp{
+        justify-self: start;
+        width: 75%;
+    }
+    .industryGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    
+    #stryker{
+        grid-column: 1;
+        grid-row: 6;
+        justify-self: end;
+        width: 75%;
+    }
+    #rogel{
+        grid-column: 3;
+        justify-self: start;
+    }
+    #in2being{
+        width: 75%;
+    }
+    #flyer{
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+        grid-row: 1 / 4;
+    }
+    #Umichcampus{
+        width: 20%;
+       
+    }
+    #MichiganLogo{
+        width: 20%;
+    }
+
+    .flyerGrid{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+}

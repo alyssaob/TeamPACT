@@ -1,0 +1,75 @@
+.frontpagegrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 5%;
+    margin: 2%;
+}
+
+h1{
+    text-align: center;
+    margin: 3%;
+    font-size: 200%;
+    font-family: "Roboto", Arial;
+    font-weight: 900;
+    padding-top: 30%;
+  }
+h2{
+    text-align: center;
+    font-size: 145%;
+    margin-bottom: 2%;
+    font-weight: 900;
+    font-family: "Roboto", Arial;
+}
+h3{
+    font-size: 120%;
+    font-weight: 900;
+    font-family: "Roboto", Arial;
+    margin-bottom: 1%;
+}
+p{
+    font-size: 115%;
+    font-family: "Roboto", Arial;
+}
+footer{
+    margin-top: 40%;
+    font-family: "Roboto", Arial;
+}
+.whoweare{
+    padding: 3%;
+}
+
+
+.ourmission{
+    padding: 3%;
+
+}
+@media screen and ( min-width: 700px){
+
+    .frontpagegrid{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .whoweare{
+        padding-top: 25%;
+        grid-column: 2;
+    
+    }
+   
+    .ourmission{ 
+        padding-top: 15%;
+        grid-column: 1;
+        grid-row: 2;
+       
+    }
+    .firstpageimg{
+        grid-row: 1;
+    }
+    footer{
+        margin-top: 10%;
+    }
+
+    h1{
+        padding-top: 3%;
+    }
+}
