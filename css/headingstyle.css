@@ -13,14 +13,24 @@ header img{
   border-radius: 100%;
 }
 .skip{
-  position: relative;
-  bottom: 40px;
+  position: relative; 
+   bottom: 40px; 
 }
+.skip:focus{
+  bottom: 0px;
+  color: black;
+  font-size: 200%;
+  margin-left: 10%;
+}
+
+/* .skip:focus {
+  font-size: 200%;
+}  */
 /* Add a background color to the top navigation */
 
 nav{
   position: absolute;
-  top: 0;
+  /* top: 0; */
   width: 100%;
   display: flex;
   /* background-color: rgb(4, 10, 54); */
