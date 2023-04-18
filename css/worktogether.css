@@ -1,13 +1,12 @@
 h1{
     font-size: 200%;
     text-align: center;
-    padding-top: 5%;
     font-family: "Roboto", Arial;
     color: black;
 }
-h1:first-child{
-    margin-top: 40%;
-  }
+body{
+    font-family: "Roboto", Arial;
+}
 h2{
     font-size: 150%;
     text-align: center;
@@ -20,17 +19,18 @@ h2{
     row-gap: 5%;
     margin: 3%;
     font-family: "Roboto", Arial;
-     height: 50%
+    height: 50%;
+    margin-bottom: 10%;
+    
 }
 
 .communityGrid, .industryGrid{
-    background-color: rgb(1,1,1,0.8);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     justify-items: center;
     align-content: space-evenly;
+    margin: 5%;
    
 }
 
@@ -38,7 +38,8 @@ h2{
     text-align: center;
     grid-column: 1 / -1;
     font-size: 120%;
-    color: white;
+    color: black;
+    font-weight: 900;
 
 }
 
@@ -46,21 +47,21 @@ h2{
     text-align: center;
     grid-column: 1 / -1;
     font-size: 110%;
-    color: white;
+    color: black;
 
 }
 
 .communityGrid h5, .industryGrid h5{
     text-align: center;
     grid-column: 1 / -1;
-    color: white;
+    color: black;
     font-size: 110%;
     font-weight: 900;
 
 }
 .communityGrid ul, .industryGrid ul{
     grid-column: 1 / -1;
-    color: white;
+    color: black;
     list-style-type:square;
 }
 
@@ -68,66 +69,68 @@ h2{
     margin-left: 7%;
 }
 .communityGrid img, .industryGrid img{
-    grid-column: 2 / 2;
-    height: 50%;
+    align-self: center;
     background-color: white;
     border: 8px white solid;
     align-self: start;
     justify-self: center;
 }
-.communityGrid p, .industryGrid p{
+/* .communityGrid p, .industryGrid p{
     grid-column: 1 / 1;
     color: white;
     align-self: center;
     justify-self: center;
  
+} */
+footer{
+    margin-top: 50%;
 }
 
 #ucp{
     grid-row: 6;
+    align-self: center;
 }
 
 #stryker{
     grid-row: 7;
+    align-self: center;
 }
 #in2being{
     grid-row: 6;
+    align-self: center;
 }
 .flyerGrid{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 3%;
     justify-items: center;
+    margin: 2%;
 }
 .flyerGrid a{
     grid-row: 2;
     color: black;
     font-family: "Roboto", Arial;
     font-size: 200%;
+    text-align: center;
 }
-.bgimg{
-    background-image: url("https://s.hdnux.com/photos/01/25/62/04/22487305/4/rawImage.jpg");
-    margin-top: 7%;
-    padding-bottom: 6%;
-}
+
+
 @media screen and (min-width: 700px){
-    .workTogether{
+    footer{
+        margin-top: 40%;
+    }
+
+    
+    .communityGrid img , .industryGrid img{
+        width: 80%;
+    }
+    .industryGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .communityGrid{
         grid-template-columns: 1fr 1fr;
-        column-gap: 7%;
-        padding-bottom: 15%;
     }
-
-    h1:first-child{
-        margin-top: 3%;
-    }
-    .communityGrid, .industryGrid{
-        height: 150%;
-        padding: 3%;
-    }
-    .communityGrid p, .industryGrid p{
-        display: none;
-    }
-
     #med{
         grid-row: 6;
         grid-column: 1;
@@ -137,10 +140,6 @@ h2{
     #ucp{
         justify-self: start;
         width: 75%;
-    }
-    .industryGrid{
-        grid-template-columns: 1fr 1fr 1fr;
-    
     }
     
     #stryker{
@@ -156,11 +155,34 @@ h2{
     #in2being{
         width: 75%;
     }
+    
+
+}
+@media screen and (min-width: 900px){
+    .workTogether{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7%;
+        padding-bottom: 15%;
+    }
+
+    .bgimg{
+        background-image: url("https://s.hdnux.com/photos/01/25/62/04/22487305/4/rawImage.jpg");
+        margin-top: 7%;
+        padding-bottom: 6%;
+    }
+
+    .communityGrid, .industryGrid{
+        height: 150%;
+        padding: 3%;
+        background-color: rgb(1,1,1,0.8);
+    }
+
+    
     #flyer{
         height: 100%;
         width: 100%;
         padding: 10%;
-        grid-row: 1 / 4;
+        grid-row: 1 / 5;
     }
     #Umichcampus{
         width: 20%;
@@ -173,6 +195,17 @@ h2{
     .flyerGrid{
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        margin: 2%;
     }
+
+    
+    footer{
+        margin-top: 10%;
+    }
+
+    .workTogether h3, .workTogether h4, .workTogether h5, .workTogether ul{
+        color: white;
+    }
+    
 
 }

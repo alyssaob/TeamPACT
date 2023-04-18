@@ -12,7 +12,6 @@ h1{
     font-size: 200%;
     font-family: "Roboto", Arial;
     font-weight: 900;
-    padding-top: 30%;
   }
 h2{
     text-align: center;
@@ -69,7 +68,4 @@ footer{
         margin-top: 10%;
     }
 
-    h1{
-        padding-top: 3%;
-    }
 }

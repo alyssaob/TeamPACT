@@ -75,8 +75,8 @@ h1{
 }
 
 /* default mobile view */
-h1:first-child{
-  margin-top: 40%;
+body{
+  font-family: "Roboto", Arial;
 }
 .Grid{
   display: grid;
@@ -119,8 +119,35 @@ h1:first-child{
 footer{
   margin-top: 160%;
 }
-/* desktop view */
+
+/* tablet view */
 @media screen and (min-width: 700px){
+  .Grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1%;
+  }
+
+  .headshots:nth-child(1), .headshots:nth-child(3) {
+    grid-row: 1;
+  }
+  .headshots:nth-child(5), .headshots:nth-child(7) {
+    grid-row: 3;
+  }
+
+  .headshots:nth-child(9), .headshots:nth-child(11) {
+    grid-row: 5;
+  }
+  .headshots:nth-child(13), .headshots:nth-child(15){
+    grid-row: 7;
+  }
+
+  footer{
+    margin-top: 40%;
+  }
+  
+}
+/* desktop view */
+@media screen and (min-width: 900px){
 
 
   .Grid{
@@ -147,8 +174,5 @@ footer{
 
   h1{
     padding-top: 3%;
-  }
-  h1:first-child{
-    margin-top: 5%;
   }
 }
