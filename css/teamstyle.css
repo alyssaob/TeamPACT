@@ -87,6 +87,7 @@ body{
   text-align: center;
   font-family: "Roboto", Arial;
   background-color: white;
+  margin-bottom: 200%;
   
 }
 .Grid h1, p{
@@ -116,9 +117,9 @@ body{
   text-align: left;
 }
 
-footer{
+/* footer{
   margin-top: 210%;
-}
+} */
 
 /* tablet view */
 @media screen and (min-width: 700px){
